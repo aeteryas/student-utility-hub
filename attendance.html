@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attendance Tracker | Student Utility Hub</title>
+
+<link rel="stylesheet" href="CSS/main.css">
+<link rel="stylesheet" href="CSS/attendance.css">
+<link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+
+<nav class="navbar">
+<div class="logo">📚 Attendance Tracking Hub</div>
+
+<div class="nav-links">
+<button onclick="window.location.href='dashboard.html'">Dashboard</button>
+<button onclick="Logout()">Logout</button>
+</div>
+</nav>
+
+<div class="page-title">
+<h1>📚 Subject Attendance Manager</h1>
+<p>Track every subject separately.</p>
+</div>
+
+<div class="attendance-container">
+
+<div class="attendance-box">
+
+<h2>Add Subject</h2>
+
+<input type="text" id="subject" placeholder="Subject Name">
+<input type="number" id="held" placeholder="Total Classes Held">
+<input type="number" id="attended" placeholder="Classes Attended">
+<input type="number" id="target" placeholder="Target %" value="75">
+
+<button onclick="addSubject()">Add Subject</button>
+
+</div>
+
+<div class="result-box">
+
+<h2>Your Subjects</h2>
+
+<div id="subjectList"></div>
+
+</div>
+
+</div>
+
+<script src="Scripts/main.js"></script>
+<script src="Scripts/attendance.js"></script>
+
+<footer>
+<p>© 2026 Student Utility Hub | Culmination of Creativity</p>
+</footer>
+
+</body>
+</html>

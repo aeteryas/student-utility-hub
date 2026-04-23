@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Focus Timer | Student Utility Hub</title>
+
+<link rel="stylesheet" href="CSS/main.css">
+<link rel="stylesheet" href="CSS/timer.css">
+<link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+<nav class="navbar">
+    <h1 class="logo">⏳ Focus Hub</h1>
+
+    <div class="nav-links">
+        <button onclick="goToDashboard()">Dashboard</button>
+        <button onclick="Logout()">Logout</button>
+    </div>
+</nav>
+
+<main class="timer-container">
+
+    <h2>Stay Locked In</h2>
+
+    <div class="timer-box">
+
+        <div class="preset-row">
+            <button onclick="setPreset(5,5)">5 + 5</button>
+            <button onclick="setPreset(10,5)">10 + 5</button>
+            <button onclick="setPreset(25,5)">25 + 5</button>
+            <button onclick="setPreset(50,10)">50 + 10</button>
+        </div>
+
+        <p id="modeText">Pomodoro Session</p>
+
+        <h1 id="timerDisplay">25:00</h1>
+
+        <div class="timer-buttons">
+            <button onclick="startTimer()">▶ Start</button>
+            <button onclick="pauseTimer()">⏸ Pause</button>
+            <button onclick="resetTimer()">↺ Reset</button>
+        </div>
+
+    </div>
+
+    <p id="sessionCount">Completed Sessions: 0</p>
+
+</main>
+
+<script src="Scripts/main.js"></script>
+<script src="Scripts/timer.js"></script>
+
+<footer>
+    <p>© 2026 Student Utility Hub | Culmination of Creativity</p>
+</footer>
+
+</body>
+</html>

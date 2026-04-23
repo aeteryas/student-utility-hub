@@ -1,0 +1,21 @@
+.centered {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+    margin: 10px 0;
+    background: #111;
+    border: 1px solid #333;
+    color: var(--primary);
+}

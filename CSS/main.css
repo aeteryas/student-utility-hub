@@ -1,0 +1,96 @@
+:root {
+    --bg: #0f1115;
+    --bg-dark: #0b0d10;
+    --card: #1a1d24;
+    --primary: #00ff9c;
+    --primary-dim: #00cc7a;
+    --text: #d1d5db;
+    --border: #222;
+}
+
+/* Base */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: var(--primary);
+}
+
+/* Buttons */
+button {
+    background: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: var(--primary);
+    color: black;
+}
+
+/* Inputs */
+input {
+    background: #111;
+    border: 1px solid var(--border);
+    color: var(--primary);
+    padding: 10px;
+    outline: none;
+}
+
+input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 5px var(--primary);
+}
+
+/* Cards */
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px var(--primary);
+    transform: scale(1.03);
+}
+
+/* Utility */
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Scrollbar (optional but cool) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+}
+
+footer {
+    background: #050505;
+    color: #39ff14aa;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #39ff14;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    padding-bottom: 60px;
+}

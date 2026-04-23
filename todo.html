@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do | Student Utility Hub</title>
+    
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/todo.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+</head>
+<body>
+    <nav>
+        <h2>📋 Planning Hub</h2>
+    
+        <div class="nav-actions">
+            <button onclick="goToDashboard()">Dashboard</button>
+            <button onclick="Logout()">Logout</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>To-do List</h1>
+
+        <!-- 🔥 Progress Card -->
+        <div class="progress-card">
+            <div class="progress-circle">
+                <span id="progressText">0%</span>
+            </div>
+
+            <div class="progress-info">
+                <h3 id="progressTitle">You have 0 tasks</h3>
+                <p id="progressDesc">No tasks yet 👀</p>
+            </div>
+        </div>
+
+        <!-- ✍️ Input -->
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Enter a task">
+            <button onclick="addTask()">Add</button>
+        </div>
+
+        <!-- 📋 Task List -->
+        <ul id="taskList"></ul>
+
+    </div>
+
+    <script src="Scripts/main.js"></script>
+    <script src="Scripts/todo.js"></script>
+    <footer>
+        <p>© 2026 Student Utility Hub | Culmination of Creativity</p>
+    </footer>
+</body>
+</html>

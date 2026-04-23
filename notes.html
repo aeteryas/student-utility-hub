@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes | Student Utility Hub</title>
+
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/notes.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">📝 Notes Hub</h1>
+
+        <div class="nav-links">
+            <button onclick="goToDashboard()">Dashboard</button>
+            <button onclick="Logout()">Logout</button>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="notes-container">
+
+        <!-- Welcome -->
+        <section class="notes-header">
+            <h2 id="welcomeText">Welcome</h2>
+            <p>Write, save and organize your thoughts.</p>
+        </section>
+
+        <!-- Notes Box -->
+        <section class="notes-box">
+
+            <textarea 
+                id="notesArea" 
+                placeholder="Start typing your notes here..."
+            ></textarea>
+
+            <!-- Stats -->
+            <div class="notes-stats">
+                <span id="wordCount">Words: 0</span>
+                <span id="charCount">Characters: 0</span>
+                <span id="saveStatus">Not Saved</span>
+            </div>
+
+            <!-- Buttons -->
+            <div class="notes-buttons">
+                <button onclick="saveNotes()">💾 Save</button>
+                <button onclick="editMode()">✏ Edit</button>
+                <button onclick="clearNotes()">🗑 Clear</button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="Scripts/main.js"></script>
+    <script src="Scripts/notes.js"></script>
+
+    <footer>
+        <p>© 2026 Student Utility Hub | Culmination of Creativity</p>
+    </footer>
+
+</body>
+</html>

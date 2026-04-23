@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Student Utility Hub</title>
+
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/dashboard.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="topbar">
+        <div id="welcome"></div>
+        <div class="nav logo-title">
+            🚀 Command Center
+        </div>
+        <button onclick="Logout()">Logout</button>
+    </div>
+
+    <!-- 🕒 Time -->
+    <div id="time"></div>
+
+    <!-- 📊 Title -->
+    <h1 class="title">Dashboard</h1>
+
+    <!-- 🧩 Tool Grid -->
+    <div class="dashboard-layout">
+        <div class="grid">
+            <a href="todo.html" class="card">✅ To-Do</a>
+            <a href="calculator.html" class="card">🧮 Expense Calculator</a>
+            <a href="notes.html" class="card">📒 Notes</a>
+
+            <a href="motivation.html" class="card">🧘 Motivation</a>
+            <a href="timer.html" class="card">⏱ Timer</a>
+            <a href="attendance.html" class="card">🔍 Attendance Tracker</a>
+        </div>
+
+        <div class="calendar-box">
+            <h3 id="monthYear"></h3>
+            <div id="calendar"></div>
+        </div>
+    </div>
+
+    <script src="Scripts/main.js"></script>
+    <script src="Scripts/dashboard.js"></script>
+
+    
+    <footer>
+        <p>© 2026 Student Utility Hub | Culmination of Creativity</p>
+    </footer>
+</body>
+</html>
