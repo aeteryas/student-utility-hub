@@ -91,7 +91,6 @@ student-utility-hub/
 │
 ├── index.html
 ├── dashboard.html
-├── dashboard copy.html
 ├── todo.html
 ├── notes.html
 ├── timer.html
@@ -103,7 +102,6 @@ student-utility-hub/
 │   ├── main.css
 │   ├── login.css
 │   ├── dashboard.css
-│   ├── dashboard copy.css
 │   ├── todo.css
 │   ├── notes.css
 │   ├── timer.css
