@@ -86,7 +86,7 @@ Student Utility Hub combines useful daily student tools such as task management,
 ---
 
 ## 📁 Project Structure
-
+```
 student-utility-hub/
 │
 ├── index.html
@@ -121,8 +121,8 @@ student-utility-hub/
 │   └── motivation.js
 │
 ├── favicon.png
-└── README.md
-
+└── README.MD
+```
 ---
 
 ## ▶ How to Run
