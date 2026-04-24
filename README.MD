@@ -167,4 +167,6 @@ Built by Aeteryas
 
 ## 🙌 Credits
 
-UI inspiration, debugging help, and feature planning were assisted using ChatGPT.
+- UI inspiration, debugging help, and feature implementation were assisted using ChatGPT.
+- Circular progress ring bar inspired by: https://react-cool-todo-app.netlify.app/
+- Minor UI inspiration from: https://tusharjustdoit.netlify.app/
