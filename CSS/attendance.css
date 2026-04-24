@@ -155,3 +155,81 @@
     box-shadow:0 0 10px red;
 }
 
+/* 📱 Mobile Responsive Fix */
+@media (max-width: 768px) {
+
+    .navbar{
+        height:auto;
+        padding:12px 14px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        gap:14px;
+    }
+
+    .logo{
+        font-size:22px;
+        line-height:1.15;
+        text-align:center;
+    }
+
+    .nav-links{
+        margin:0;
+        width:100%;
+        display:flex;
+        justify-content:center;
+        gap:12px;
+        flex-wrap:wrap;
+    }
+
+    .nav-links button{
+        padding:9px 14px;
+        font-size:14px;
+    }
+
+    .page-title{
+        margin:24px 12px 18px;
+        padding:0 10px;
+    }
+
+    .page-title h1{
+        font-size:32px;
+        line-height:1.2;
+    }
+
+    .page-title p{
+        font-size:16px;
+    }
+
+    .attendance-container{
+        width:100%;
+        margin:0;
+        padding:0 12px 30px;
+        gap:20px;
+        box-sizing:border-box;
+    }
+
+    .attendance-box,
+    .result-box{
+        min-width:0;
+        width:100%;
+        padding:22px;
+        box-sizing:border-box;
+    }
+
+    .attendance-box input,
+    .attendance-box button{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .action-row{
+        flex-direction:column;
+    }
+
+    footer{
+        position:static;
+        margin-top:25px;
+    }
+}

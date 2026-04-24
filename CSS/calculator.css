@@ -209,3 +209,81 @@ box-shadow:0 0 10px yellow;
 .green{
 color:#00ff99;
 }
+
+/* 📱 Mobile Overflow Fix Only */
+@media (max-width: 768px) {
+
+    .navbar{
+        padding:12px 14px;
+        height:auto;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        gap:14px;
+    }
+
+    .logo{
+        font-size:22px;
+        text-align:center;
+        max-width:100%;
+        line-height:1.15;
+    }
+
+    .nav-links{
+        margin:0;
+        display:flex;
+        justify-content:center;
+        gap:12px;
+        width:100%;
+    }
+    .nav-links button{
+        padding:9px 14px;
+        font-size:14px;
+    }
+
+    .page-title{
+        margin:24px 15px 18px;
+        padding:0 10px;
+    }
+
+    .page-title h1{
+        font-size:32px;
+        line-height:1.15;
+    }
+
+    .page-title p{
+        font-size:16px;
+    }
+
+    .expense-container{
+        width:100%;
+        padding:0 14px 30px;
+        margin:0;
+        gap:20px;
+        box-sizing:border-box;
+    }
+
+    .expense-box,
+    .status-box{
+        min-width:0;
+        width:100%;
+        padding:22px;
+        box-sizing:border-box;
+    }
+
+    .top-actions{
+        flex-direction:column;
+    }
+
+    .expense-box input,
+    .expense-box button{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .expense-item{
+        flex-wrap:wrap;
+        gap:10px;
+    }
+}

@@ -162,3 +162,75 @@ a.card {
     text-shadow:0 0 12px #39ff14;
     letter-spacing:2px;
 }
+
+/* 📱 Mobile Responsive Fix */
+@media (max-width: 768px) {
+
+    .topbar {
+        padding: 15px 18px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .logo-title {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    #welcome {
+        font-size: 14px;
+    }
+
+    #time {
+        margin: 15px 18px;
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 2.2rem;
+        margin: 10px 0 20px;
+    }
+
+    .dashboard-layout {
+        flex-direction: column;
+        padding: 10px 15px 90px;
+        gap: 25px;
+    }
+
+    .grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+        padding: 0;
+    }
+
+    .card {
+        height: 120px;
+        font-size: 0.95rem;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .calendar-box {
+        width: 100%;
+        max-width: 100%;
+        position: static;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    #calendar {
+        gap: 6px;
+    }
+
+    .date {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    footer {
+        position: static;
+        margin-top: 30px;
+    }
+}
